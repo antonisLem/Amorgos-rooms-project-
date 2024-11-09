@@ -1,0 +1,93 @@
+.account-container {
+    float: left;
+}
+
+.account-bubble {
+    background-color: #af4c4c;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+}
+
+.account2-container {
+    display: inline-block;
+}
+
+.account2-bubble {
+    background-color: #0493be;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff ;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #d17450;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+    top: 69%;
+    left: 0;
+    border-radius: 9px;
+    color: #ffffff ;
+}
+
+.dropdown-menu a {
+    color: black;   
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e93a0e;
+}
+
+.dropdown2-menu {
+    display: none;
+    position: relative;
+    background-color: #6093f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+    top: 69%;
+    left: 0;
+    border-radius: 5px;
+
+}
+
+.dropdown2-menu a {
+    color: black;   
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.8s;
+}
+
+.dropdown2-menu a:hover {
+    background-color: #a1c4f1;
+}
+
+
+
+/* Specific styles for the first dropdown menu */
+.account-container:hover .dropdown-menu-1 {
+    display: block;
+}
+
+/* Specific styles for the second dropdown menu */
+.account2-container:hover .dropdown-menu-2 {
+    display: block;
+    top: 25%;
+    left: 20%;
+    
+}
+

@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("StyleMedia/amorgos.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #00c3ff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 100px ;
+    margin-top: 130px;
+    text-align: left;
+    padding: 50px 0;
+    background-color: #b4d2ffe8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(105, 117, 226, 0.589);
+    height: 100%;
+    overflow: auto;
+}.container h1{
+    color:#ffffff;
+}
+
+.searchDiv {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.searchDiv h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.panoimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.innerRoom {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.innerRoom h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.innerRoom p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.innerRoom .btn, .innerRoom .btnaltalt {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: background-color 0.8s;
+    background-color: #0000003b;
+    background: linear-gradient(to bottom, #009ea3, #5d6dff);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.innerRoom .btnaltalt {
+    background: linear-gradient(to bottom, #009ea3, #5d6dff);
+    background-color: #000000b4;
+}
+.innerRoom .btn:hover, .innerRoom .btnaltalt:hover{
+    background: linear-gradient(to bottom, #006c70, #000c74);
+    background-color: #000000b4;
+}
+
+.account-container {
+    display: inline-block;
+    position: relative;
+}
+
+.account-bubble {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    top: 40px;
+}
+
+.account-container:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.dropdown-menu a:hover {
+    color: #000;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .innerRoom .btn, .innerRoom .btnaltalt {
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        max-width: 100%;
+        margin: 10px ;
+        margin-top: 100px;
+        text-align: left;
+        padding: 20px 0;
+        background-color: #b4d2ffe8;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(105, 117, 226, 0.589);
+    }.container h1{
+        color:#ffffff;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .innerRoom {
+        padding: 10px;
+    }
+
+    .innerRoom .btn, .innerRoom .btnaltalt {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .container {
+        max-width: 100%;
+        margin: 10px ;
+        margin-top: 100px;
+        text-align: left;
+        padding: 20px ;
+        background-color: #b4d2ffe8;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(105, 117, 226, 0.589);
+    }.container h1{
+        color:#ffffff;
+    }
+}

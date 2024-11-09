@@ -1,0 +1,772 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('media/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(204, 242, 255, 0.5);;
+}
+
+nav {
+    background-color: #a8e3ff;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(26, 167, 202);
+    border-style: double;
+    border-width: 4px;
+    border-radius: 10px; 
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li  {
+    display:inline;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul a {
+    
+    text-decoration: none;
+    color: black;
+    flex-grow: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+ul a:hover {
+    color: blue;
+}
+
+ul li:not(:last-child) {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px 3px;   
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 25px;
+    position: sticky;
+    top: 0;
+}
+
+.amorgos-logo img {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #0a435e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* Other styles */
+.container-page {
+    max-width: 1400px;
+    margin: 5px 10px;
+    padding: 0px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.welcome {
+    border-radius: 10px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 150px;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    text-align: center;
+}
+
+.welcome h1, .welcome h2, .welcome h3 {
+    color: black;
+    text-align: center;
+    border: 3px solid rgb(26, 167, 202);
+    border-radius: 10px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    padding-top: 1px;
+    margin-bottom: 15px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-top: 5px;
+}
+
+.welcome h3 {
+    padding: 20px;
+    margin: 50px 0px;
+    font-style: italic;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.welcome p {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    background-color: rgba(168, 227, 255, 0.5);
+    padding:10px;
+    margin: 60px 5px;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.welcome img {
+    border-radius: 10px;
+    width: 700px;
+    
+}
+
+.content {
+
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    border: 2px solid rgb(26, 167, 202);
+  
+    
+}
+
+.content p {
+    margin: 0;
+    padding: 10px;
+}
+
+.content a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    color: blue;
+}
+
+footer {
+    border-top: 2px solid #040404;
+    text-align: center;
+    padding: 50px;   
+    font-weight: bold;
+    font-size: 13px;
+    color: #11076c;
+}
+
+
+.search-container {
+    margin: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    border-color: #0a435e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+}
+
+.search-container input[type="text"] {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+}
+
+.search-container button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0a435e;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.search-container select{
+    width: 200px;
+    padding: 15px;
+    margin:25px;
+    border-radius: 5px 0 0 5px;
+    border-color: #0a435e;
+    
+}
+.search-bar{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.search-location-bar{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.hotel-container{
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff); /* Light blue to white gradient */
+    background-repeat: repeat;
+    border-radius: 50px;
+    padding: 5px;
+}
+.info-container{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    text-align: left;
+}
+.info-container h2{ 
+    
+    padding: 5px;
+    margin: 5px;
+    
+}
+.info-container p{
+    font-style: italic;
+    margin: 5px;
+    padding: 5px;
+}
+.hotel-image {
+    padding: 1px;
+    margin: 1px;
+    text-align: right;
+}
+
+.hotel-image a img {
+    width: 20%;
+    transition: transform 0.5s ease;
+    
+}   
+
+.hotel-image a img:hover  {
+    transform: scale(1.1);
+}
+.more-container{
+    background-color: rgba(204, 242, 255, 0.5);
+    border-radius: 10px;
+    padding:10px;
+}
+.more-container h1{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color:black;
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+    border-radius: 100px;  
+}
+.more-container h2{
+    text-align: center;
+}
+.more-container p{
+    text-align: left;
+    font-size: large;
+    padding: 25px 10px;
+    margin: 10px;
+}
+.image1{
+    float:left;
+    margin: 5px 15px;  ;
+    padding:10px;
+}
+.image1 img{
+    border: 5px solid rgb(26, 167, 202);
+    border-radius: 15px;
+}
+.images{
+    margin: 5px;
+    padding:10px;
+    background-color: #a8e3ff;
+    border-radius: 60px;
+}
+.images img{
+    width: 20%;
+    border-radius: 25px;
+    padding:2px 10px;
+    margin: 5px 15px;
+}
+.more-container ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.more-container ol li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.more-container a{
+    font-size: 20px;
+    font-style: italic;
+}
+.container-fun-fact h3{
+    text-align: center;
+}
+.container-fun-fact{
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    border: 2px solid #187295;
+}
+.container-more-food{
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px;
+    border: 2px solid #187295;
+}
+.container-more-food p{
+    font-style: italic;
+
+}
+.login-container h1{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-bottom: 2px solid #040404;
+    border-radius: 15px;
+    text-align: center;
+}
+.login-container label,input{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.login-container form{
+    padding: 25px 25px;
+    margin: 30px 30px;
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+    border-radius: 15px;
+}
+.login-container button{
+    padding: 5px;
+    margin-left: 140px;
+    background-color: #0a435e;
+    color: white;
+    border:#000;
+    cursor: pointer;
+  
+}
+.sign-up-container h1{
+    text-align: center;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    padding: 10px;
+    font-size: 40px;
+}
+.sign-up-container h2{
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #040404;
+}
+
+.sign-up-container label,input{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+.sign-up-container button{
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #0a435e;
+    color: white;
+    border:#000;
+    cursor: pointer;
+}
+.sign-up-container{
+    font-size: 20px;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 10px;
+    margin: 35px 30px;
+    padding: 25px 0px;
+}
+.contact-container h1{
+    text-align: center;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    padding: 20px;
+}
+.contact-container h2{
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #040404;
+}
+.contact-container label{
+    padding: 10px;
+    padding-bottom: 15px;
+    margin: 10px;
+    font-style: italic;
+    text-align: center;
+}
+.contact-container input{
+    padding: 3px;
+    padding-bottom: 5px;
+    margin: 10px;
+    font-style: italic;
+}
+.contact-container button{
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color:#0a435e;
+    color: white;
+    border:#000;
+    cursor: pointer;
+}
+.contact-container p{
+    font-size: 15px;
+    font-style: italic;
+    float: left;
+    padding:10px;
+    color: rgb(116, 0, 0);
+}
+.contact-container textarea{
+    box-sizing: border-box;
+}
+.contact-container{
+    font-size: 20px;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 10px;
+    margin: 35px 30px;
+    padding: 25px 0px;
+}
+
+.create-page-container h1{
+    text-align: center;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #040404;
+    border-radius: 10px;
+}
+.create-page-container h2{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #040404;
+}
+.create-page-container label,input{
+    padding: 5px;
+    padding-bottom: 15px;
+    margin: 10px;
+    font-style: italic;
+    font-size: 18px;
+}
+.create-page-container{
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+}
+.create-page-container button{
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color:#0a435e;
+    color: white;
+    border:#000;
+    cursor: pointer;
+}
+.create-page-container textarea{
+    width: 20%;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.container-info-hotel h1{
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #a8e3ff);
+    border-radius: 10px;
+    border: 1px solid #28607a; 
+}
+.container-info-hotel img{
+    width: 20px;
+    padding:10px;
+    margin:15px;
+    float: left;
+    border-radius: 100px;
+    border: 1px solid #28607a; 
+}
+.container-info-hotel p{
+    text-align: center;
+    font-size: large;
+    padding: 25px 10px;
+    margin: 25px;
+    padding:10px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+}
+.container-info-hotel{
+    padding:10px;
+    margin-bottom: 300px;
+    background: linear-gradient(to bottom, #a8e3ff, #ffffff);
+    border-radius: 10px;
+}
+.content-info{
+
+    background-color: #0056b3;
+    display: flex;
+    border-top: 2px solid #040404;
+}
+.content-info p{
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+    margin:5px
+}
+.content-info img{
+    width: 30px;
+    border-radius: 10px;
+}
+.video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1020px) {
+    
+    nav{
+       padding-bottom: 2px;
+       display:flex;
+       flex-direction: row;
+    }
+    ul li{
+        display: block; /* Display menu items inline */
+        margin: 3px; /* Add some space between menu items */
+        text-align: center;
+    }
+    ul li:not(:last-child) {
+        border-right: none;
+        padding-right: 10px;
+        padding-bottom: 2px;
+    }
+    .welcome img {
+
+        width:600px;
+    }
+   
+    .search-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .welcome h1 {
+      font-size: 25px;
+    }
+    .welcome h2{
+        font-size: 15px;
+    }
+    .welcome h3{
+        font-size: 15px;
+    }
+    .welcome p{
+        font-size: 15px;
+    }
+    
+    .menu-container {
+    position:static;
+      flex-direction: column;
+      align-items: center;
+       
+    }
+    nav{
+        padding: 1px;
+        border-width: 2px;
+        display: none;
+    }
+    nav.active {
+        display:flex;
+        flex-direction: row; /* Ensure nav items are aligned horizontally */
+        align-items: center; /* Vertically center items */
+        width: 150px;
+        margin-top:10px;
+        padding:7px;
+    }
+
+
+    .welcome img {
+        width:85%;  
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin:5px;
+    }
+    ul li{
+        display: block; /* Display menu items inline */
+        margin: 3px; /* Add some space between menu items */
+        text-align: center;
+
+    }
+    .amorgos-logo {
+        margin-bottom: 10px;
+        
+    }
+    .amorgos-logo img {
+        width: 150px;
+        border-radius: 100px;
+    
+    }
+    .menu-toggle{
+        display: block;
+        
+    }
+    button.menu-toggle{
+        width: 100px;
+        border-radius: 10px;
+    }
+    .search-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .search-container input[type="text"],
+    .search-container select,
+    .search-container button[type="submit"] {
+        width: 100%;
+        margin: 5px 0px;
+        border-radius: 5px;
+        padding:4px;
+    }
+    .search-container input[type="text"] {
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .search-container button[type="submit"] {
+        border-radius: 5px;
+    }
+
+    .search-container select {
+        border-radius: 5px;
+        font-size: 10px; /* Smaller font size for the select element */
+        padding:5px 10px; /* Adjust padding for smaller screens */ 
+    }
+    .contact-container{
+        margin:10px;
+        padding:20px;
+        font-size:18px;
+    }
+    .contact-container h1, .contact-container h2{
+        
+        font-size:22px;
+    }
+    .contact-container label,.contact-container input,.contact-container textarea {
+        width: 100%;
+        margin:5px 0px;
+        display: flex;
+    }
+    .contact-container input {
+        padding: 5px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+    }
+    
+    .contact-container textarea {
+        width: 100%; /* Make textarea take full width */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .contact-container button {
+        width: 100%; /* Make button take full width */
+        margin: 10px 0; /* Adjust margin */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .contact-container p {
+        float: none; /* Remove float */
+        width: 100%; /* Make paragraph take full width */
+        text-align: center; /* Center align text */
+    }
+    .more-container{
+        background-color: rgba(168, 227, 255, 0.5);
+        border-radius: 10px;
+        padding:10px;
+    }
+    .more-container h1{
+        font-size: 22px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .more-container h2{
+        font-size: 22px;
+    }
+    .more-container p{
+        text-align: center;
+        font-size:20px;
+        padding: 25px 10px;
+        margin: 10px;
+    }
+    .image1{
+      display: block;
+    }
+    .image1 img{
+        border: 5px solid rgb(26, 167, 202);
+        border-radius: 15px;
+        width: 250px;
+    }
+    .images{
+        text-align: center;
+        margin: 5px;
+        padding:10px;
+        background-color: #a8e3ff;
+        border-radius: 60px;
+    }
+    .images img{
+        width: 100px;
+        border-radius: 25px;
+        padding:2px 10px;
+        margin: 5px 15px;
+    }
+    .more-container ol li {
+        font-size: 20px;
+
+    }
+    .more-container a{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .video{
+        max-width: 350px;
+}
+  
+}
+
+/*na paiksw me ta index gia to hover*/
